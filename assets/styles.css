@@ -1,0 +1,20 @@
+/*Body style*/
+body {
+    background-color: bisque;
+}
+/* style for img inside the button*/
+button img {
+    width:100px
+    hight:auto;
+}
+
+/*style for button*/
+button { 
+    display: inline-block;
+    padding:5px;
+    border:none;
+    background: none;
+}
+
+/*Center the rows*/
+#row1, row2
