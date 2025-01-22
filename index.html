@@ -57,9 +57,23 @@
         //shuffle both rows
         topCards.sort(()=> 0.5 - Math.random());
         bottomCards.sort(()=> 0.5 - Math.random());
-         
-        //Asign image to buttons
 
+        //handle flipping function 
+        function handleFlip 
+
+         
+        //Asign image to buttons in the top row
+        for (let i=1; i<= 12; i++) {
+            const button = document.getElementById(`btn${i}`);
+            const cardImage = topCards [i-1];
+            button.addEventListener("click", ()=> handleFlip (button, cardImage));
+        }
+        //Asign image to buttons in the bottom row
+        for (let i=13; i<= 24; i++) {
+            const button = document.getElementById(`btn${i}`);
+            const cardImage = bottomCards [i-13];
+            button.addEventListener("click", ()=> handleFlip (button, cardImage));
+        }
             
         </script>
 
