@@ -17,4 +17,8 @@ button {
 }
 
 /*Center the rows*/
-#row1, row2
+#row1, #row2 {
+    display:flex
+    justify-content:center;
+    margin:10px 0;
+}
