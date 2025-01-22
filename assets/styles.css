@@ -4,8 +4,10 @@ body {
 }
 /* style for img inside the button*/
 button img {
-    width:100px
+    width:100px;
     hight:auto;
+    display: block;
+    margin: 0 auto
 }
 
 /*style for button*/
