@@ -58,8 +58,21 @@
         topCards.sort(()=> 0.5 - Math.random());
         bottomCards.sort(()=> 0.5 - Math.random());
 
+            
         //handle flipping function 
-        function handleFlip 
+        function handleFlip (button, cardImage,row) {
+            const img=button.querySelector("img");
+            //don't flip the same card twice 
+            if (img.src.includes(cardImage)){
+                return
+            }
+            //flip card
+            img.src=cardImage;
+            if (!firstFlippedCard){
+
+
+            }
+        }
 
          
         //Asign image to buttons in the top row
@@ -74,6 +87,13 @@
             const cardImage = bottomCards [i-13];
             button.addEventListener("click", ()=> handleFlip (button, cardImage));
         }
+        //track game state
+        let firstFlippedCard= null;//store first flipped card
+        let firstFlippedButton= null; //store the first flipped button
+        let firstFlippedRow= null; // keep track of which row the first card was in 
+        let score=0; //starting with player score
+        //display the score
+        alert 
             
         </script>
 
