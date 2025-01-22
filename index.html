@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Memory Game
-        </title>
-        <link rel="stylesheet" href="assets.styles.css">
+        <title>Zodiac Memory Game</title>
+        
     </head>
     <body>
         <h1>
@@ -54,7 +53,10 @@
             ];
         //duplicate card images for the bottom row
         const bottomCards= [...topCards];
-        
+
+        //shuffle both rows
+        topCards.sort(()=> 0.5 - Math.random());
+        bottomCards.sort(()=> 0.5 - Math.random());
          
         //Asign image to buttons
 
