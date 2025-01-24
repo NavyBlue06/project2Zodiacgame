@@ -102,12 +102,13 @@
                     } else {
                         allowFlippingBottomRow= false;
                     }
-                } else { //second card flipped
+                } else { 
+                    //second card flipped
                     if (firstFlippedRow !== row) {
                         if (firstFlippedCard === cardImage) {
                             score += 1;
-                            scoreDisplay.textContent = `Score: ${score}`;
-                            alert("It's a match!");
+                            
+                            alert(`It's a match! Current score: ${score}`);
                         } else  // if cards don't match
                             alert('Not a match');
                         
