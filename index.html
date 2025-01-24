@@ -78,6 +78,8 @@
                 if (img.src.includes(cardImage)) {
                     return
                 }
+                //flip back both cards if it's wrong 
+
                 // flip card
                 img.src = cardImage;
                 if (!firstFlippedCard) {
@@ -89,9 +91,9 @@
                         if (firstFlippedCard === cardImage) {
                             score += 1;
                             scoreDisplay.textContent = `Score: ${score}`;
-                            console.log("It's a match!")
+                            alert("It's a match!");
                         } else  // if cards don't match
-                            console.log('Not a match');
+                            alert('Not a match');
                         
                         setTimeout(() => {
                             img.src = "assets/images/13-card-before/Card before flipping (1).png";
