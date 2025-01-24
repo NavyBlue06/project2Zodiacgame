@@ -84,7 +84,7 @@
             function handleFlip(button, cardImage, row) {
                 if (!isFlippingAllowed) return;
                 //don't flip in the same row
-                if (firstFlippedRow === row) {'You must select card from the second row'
+                if (firstFlippedRow === row) {alert('You must select card from the second row')
                     return;
                 }
                 const img = button.querySelector("img");
