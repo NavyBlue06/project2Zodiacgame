@@ -81,15 +81,17 @@
             // handle flipping function
             function handleFlip(button, cardImage, row) {
                 if (!isFlippingAllowed) return;
-                const img = button.querySelector("img");
-                // don't flip the same card twice
-                if (img.src.includes(cardImage)) {
-                    return
-                }
                 //don't flip in the same row
                 if (firstFlippedRow === row)) {'You must select card from the second row'
                     return;
                 }
+                const img = button.querySelector("img");
+                // don't flip the same card twice
+                if (img.src.includes(cardImage)) {
+                    return;
+                }
+                
+                
                 // prevent flipping cards in the same row, if one is flipped.
                 if ((row === 'top' && ! allowFlippingTopRow) || (row === 'bottom' && ! allowFlippingBottomRow)) 
                     return;
@@ -118,7 +120,7 @@
                         
 
                         setTimeout(() => {
-                            img.src = "assets/images/13-card-before/Card before flipping (1).png";
+                            img.src = "assets/images/13-card-before/card-before-flipping.png";
                             firstFlippedButton.querySelector("img").src = "assets/images/13-card-before/Card before flipping (1).png";
                         }, 1000);
                     } else {
@@ -136,13 +138,13 @@
             for (let i = 1; i <= 12; i++) {
                 const button = document.getElementById(`btn${i}`);
                 const cardImage = topCards[i - 1];
-                button.addEventListener("click", () => handleFlip(button, cardImage));
+                button.addEventListener("click", () => handleFlip(button, cardImage, row));
             }
             // Asign image to buttons in the bottom row
             for (let i = 13; i <= 24; i++) {
                 const button = document.getElementById(`btn${i}`);
                 const cardImage = bottomCards[i - 13];
-                button.addEventListener("click", () => handleFlip(button, cardImage));
+                button.addEventListener("click", () => handleFlip(button, cardImage, row));
             }
         </script>
 
