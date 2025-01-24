@@ -73,16 +73,22 @@
             // track game state
             let firstFlippedCard = null; // store first flipped card
             let firstFlippedButton = null; // store the first flipped button
-            
+            let firstFlippedRow= null; //store the first flipped row
+            let isFlippingAllowed = true; //test whether simultaneous flipping is allowed
             let score = 0;
             
 
             // handle flipping function
             function handleFlip(button, cardImage, row) {
+                if (!isFlippingAllowed) return;
                 const img = button.querySelector("img");
                 // don't flip the same card twice
                 if (img.src.includes(cardImage)) {
                     return
+                }
+                //don't flip in the same row
+                if (firstFlippedRow === row)) {'You must select card from the second row'
+                    return;
                 }
                 // prevent flipping cards in the same row, if one is flipped.
                 if ((row === 'top' && ! allowFlippingTopRow) || (row === 'bottom' && ! allowFlippingBottomRow)) 
