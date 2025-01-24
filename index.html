@@ -85,7 +85,7 @@
                 if (img.src.includes(cardImage)) {
                     return
                 }
-                //flip back both cards if it's wrong 
+                //prevent flipping cards in the same row, if one is flipped. 
                 if ((row === 'top' && !allowFlippingTopRow) || (row === 'bottom' && !allowFlippingbottomRow)) return;
 
                 // flip card
