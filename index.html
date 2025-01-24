@@ -70,6 +70,13 @@
             topCards.sort(() => 0.5 - Math.random());
             bottomCards.sort(() => 0.5 - Math.random());
 
+            // track game state
+            let firstFlippedCard = null; // store first flipped card
+            let firstFlippedButton = null; // store the first flipped button
+            let firstFlippedRow = null; // keep track of which row the first card was in
+            let score = 0;
+            let allowFlippingTopRow = true;
+            let allowFlippingBottomRow= true;
 
             // handle flipping function
             function handleFlip(button, cardImage, row) {
@@ -79,6 +86,7 @@
                     return
                 }
                 //flip back both cards if it's wrong 
+                if ((row === 'top' && !allowFlippingTopRow) || (row === 'bottom' && !allowFlippingbottomRow)) return;
 
                 // flip card
                 img.src = cardImage;
@@ -118,11 +126,7 @@
                 const cardImage = bottomCards[i - 13];
                 button.addEventListener("click", () => handleFlip(button, cardImage));
             }
-            // track game state
-            let firstFlippedCard = null; // store first flipped card
-            let firstFlippedButton = null; // store the first flipped button
-            let firstFlippedRow = null; // keep track of which row the first card was in
-            let score = 0;
+            
             // starting with player score
             // display the score
             alert
