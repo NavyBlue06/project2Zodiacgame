@@ -86,15 +86,23 @@
                     return
                 }
                 //prevent flipping cards in the same row, if one is flipped. 
-                if ((row === 'top' && !allowFlippingTopRow) || (row === 'bottom' && !allowFlippingbottomRow)) return;
+                if ((row === 'top' && !allowFlippingTopRow) || (row === 'bottom' && !allowFlippingBottomRow)) return;
 
                 // flip card
                 img.src = cardImage;
                 if (!firstFlippedCard) {
+                    //first card flipped
                     firstFlippedCard = cardImage;
                     firstFlippedButton = button;
                     firstFlippedRow = row;
-                } else {
+
+                    //disable flipping in the same row:
+                    if (row === 'top') {
+                        allowFlippingTopRow= false;
+                    } else {
+                        allowFlippingBottomRow= false;
+                    }
+                } else { //second card flipped
                     if (firstFlippedRow !== row) {
                         if (firstFlippedCard === cardImage) {
                             score += 1;
