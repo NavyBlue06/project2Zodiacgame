@@ -113,25 +113,32 @@
                         allowFlippingBottomRow = false;
                     }
                 } else { // second card flipped
-                    if (firstFlippedRow !== row) {
+                    isFlippingAllowed= false; 
                         if (firstFlippedCard === cardImage) {
                             score += 1;
                             alert(`It's a match! Current score: ${score}`);
+                        resetFlipState();    
                         } else  // if cards don't match
                             alert('Not a match');
                         
 
                         setTimeout(() => {
                             img.src = "assets/images/13-card-before/card-before-flipping.png";
-                            firstFlippedButton.querySelector("img").src = "assets/images/13-card-before/Card before flipping (1).png";
+                            firstFlippedButton.querySelector("img").src ="assets/images/13-card-before/card-before-flipping.png" ;
+                            resetFlipState();
                         }, 1000);
                     } else {
                         alert('You must select card from the other row!');
                     }
-                    // reset flipped card tracking
+                    // reset flipped card tracking-- update to function to be called up under the else statement on row 120
+                    function resetFlipState(){
                     firstFlippedCard = null;
                     firstFlippedButton = null;
                     firstFlippedRow = null;
+                    isFlippingAllowed= true;
+                    allowFlippingTopRow= true;
+                    allowFlippingBottomRow=true;
+                }
                 }
             }
 
