@@ -49,15 +49,15 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 - Add more animation for flipping cards for a smoother experience. 
 
 ## Credits 
-- Zodiac images and cards designed by me on [[canva] (https://www.canva.com/)].
+- Zodiac images and cards designed by me on [canva] (https://www.canva.com/).
 - Game concept is inspired by the classic memory card game that all of us have played at least once in our life time. 
 
 
 ## Contact
 
 Please feel free to reach out if you have any questions or suggestions! 
-Email: [navaheierdal92@outlook.com].
-GitHub: [[NavyBlue06](https://github.com/NavyBlue06)].
+Email: (navaheierdal92@outlook.com).
+GitHub: [NavyBlue06](https://github.com/NavyBlue06).
 
 
 ## Installation 
