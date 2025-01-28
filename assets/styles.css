@@ -23,6 +23,7 @@ button {
     display:flex
     justify-content:center;
     margin:10px 0;
+    flex-wrap:wrap; /*for responsiveness*/
 }
 
 /* add responsiveness*/
