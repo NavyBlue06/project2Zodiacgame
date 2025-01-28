@@ -22,7 +22,11 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 **Score Tracking:** Keeps track of how many matches you've made.
 ## Technologies Used
 **HTML:** Structuring the game layout. 
-**CSS:**
+**CSS:** Styling the game interface.
+**JavaScript:** Implement game logic, card flipping, interactivity and match functionality. 
+
+---
+
 ## Installation 
 1. Clone or download the repo to your local machine: 
 ```bash 
