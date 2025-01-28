@@ -73,35 +73,43 @@
             // track game state
             let firstFlippedCard = null; // store first flipped card
             let firstFlippedButton = null; // store the first flipped button
-            let firstFlippedRow= null; //store the first flipped row
-            let isFlippingAllowed = true; //test whether simultaneous flipping is allowed
-            let allowFlippingTopRow = true; //control flipping top row
-            let allowFlippingBottomRow = true; //control flipping bottom row
+            let firstFlippedRow = null; // store the first flipped row
+            let isFlippingAllowed = true; // test whether simultaneous flipping is allowed
+            let allowFlippingTopRow = true; // control flipping top row
+            let allowFlippingBottomRow = true; // control flipping bottom row
             let score = 0;
-            
-//this is not working, code is catastrophic 
+
+            // this is not working, code is catastrophic
+            let isTopRowFlipped = false;
+            let isBottomRowFlipped = false;
             // handle flipping function
+            
             function handleFlip(button, cardImage, row) {
-                if (!isFlippingAllowed) return;
-                //don't flip in the same row
-                if (firstFlippedRow === row) {alert('You must select card from the second row')
+                if (!isFlippingAllowed) 
+                    return;
+                /*
+                // don't flip in the same row
+                if (firstFlippedRow === row) {
+                    alert('You must select card from the second row')
                     return;
                 }
+                    */
                 const img = button.querySelector("img");
                 // don't flip the same card twice
                 if (img.src.includes(cardImage)) {
                     return;
                 }
-                
-                
+
+
                 // prevent flipping cards in the same row, if one is flipped.
                 if ((row === 'top' && ! allowFlippingTopRow) || (row === 'bottom' && ! allowFlippingBottomRow)) 
                     return;
                 
 
+
                 // flip card
                 img.src = cardImage;
-                if (!firstFlippedCard) { // first card flipped
+                if (! firstFlippedCard) { // first card flipped
                     firstFlippedCard = cardImage;
                     firstFlippedButton = button;
                     firstFlippedRow = row;
@@ -113,34 +121,34 @@
                         allowFlippingBottomRow = false;
                     }
                 } else { // second card flipped
-                    isFlippingAllowed= false; 
-                        if (firstFlippedCard === cardImage) {
-                            score += 1;
-                            alert(`It's a match! Current score: ${score}`);
-                        resetFlipState();    
-                        } else  // if cards don't match
-                            alert('Not a match');
-                        
+                    isFlippingAllowed = false;
+                    if (firstFlippedCard === cardImage) {
+                        score += 1;
+                        alert(`It's a match! Current score: ${score}`);
+                        resetFlipState();
+                    } else  // if cards don't match
+                        alert('Not a match');
+                    
 
-                        setTimeout(() => {
-                            img.src = "assets/images/13-card-before/card-before-flipping.png";
-                            firstFlippedButton.querySelector("img").src ="assets/images/13-card-before/card-before-flipping.png" ;
-                            resetFlipState();
-                        }, 1000);
-                    } else {
-                        alert('You must select card from the other row!');
-                    }
-                    // reset flipped card tracking-- update to function to be called up under the else statement on row 120
-                    function resetFlipState(){
+
+                    setTimeout(() => {
+                        img.src = "assets/images/13-card-before/card-before-flipping.png";
+                        firstFlippedButton.querySelector("img").src = "assets/images/13-card-before/card-before-flipping.png";
+                        resetFlipState();
+                    }, 1000);
+                } else {
+                    alert('You must select card from the other row!');
+                }
+                // reset flipped card tracking-- update to function to be called up under the else statement on row 120
+                function resetFlipState() {
                     firstFlippedCard = null;
                     firstFlippedButton = null;
                     firstFlippedRow = null;
-                    isFlippingAllowed= true;
-                    allowFlippingTopRow= true;
-                    allowFlippingBottomRow=true;
+                    isFlippingAllowed = true;
+                    allowFlippingTopRow = true;
+                    allowFlippingBottomRow = true;
                 }
-                }
-            
+            }
 
 
             // Asign image to buttons in the top row
