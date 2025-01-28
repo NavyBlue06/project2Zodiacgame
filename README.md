@@ -47,6 +47,7 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 - Reshuffle cards to make the game more difficult. 
 - Introduce a restrat button to restart the game. 
 - Add more animation for flipping cards for a smoother experience. 
+- Have the cards come forward to make them readable for the player. 
 
 ## Credits 
 - Zodiac images and cards designed by me on [canva] (https://www.canva.com/).
