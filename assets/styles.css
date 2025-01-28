@@ -34,4 +34,8 @@ button img {
 button {
     padding: 3px;
 }
-/**/
+/*add spacing betwwen rows test it Navah!*/ 
+#row1, #row2 {
+    gap: 10px;
+    align-items: center;
+}
