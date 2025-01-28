@@ -34,6 +34,31 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 **JavaScript:** Implement game logic, card flipping, interactivity and match functionality. 
 
 ---
+## Gameplay Screenshots
+//add screenshots here after testing on devices. 
+
+## Known Issues
+- No end of game notification when all pairs are matched. 
+- Hard to read cards. (maybe fix with roy's guidance)
+- Score is displayed only with alerts, and not on the webpage. 
+
+## Possible Future Enhacements
+- Add a timer to make it more challenging 
+- Reshuffle cards to make the game more difficult. 
+- Introduce a restrat button to restart the game. 
+- Add more animation for flipping cards for a smoother experience. 
+
+## Credits 
+- Zodiac images and cards designed by me on [https://www.canva.com/].
+- Game concept is inspired by the classic memory card game that all of us have played at least once in our life time. 
+
+
+## Contact
+
+Please feel free to reach out if you have any questions or suggestions! 
+Email: [navaheierdal92@outlook.com].
+GitHub: [[NavyBlue06](https://github.com/NavyBlue06)].
+
 
 ## Installation 
 1. Clone or download the repo to your local machine: 
