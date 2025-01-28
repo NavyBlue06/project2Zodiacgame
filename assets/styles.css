@@ -44,15 +44,6 @@ button {
     padding: 3px;
 }
 
-/*Want to test it on my galaxy flip 6 outer screen*/
-@media (max-width: 400px)
-
-button img {
-    width: 50px;
-}
-button {
-    padding: 3px;
-}
 
 /*add spacing betwwen rows test it Navah!*/ 
 #row1, #row2 {
