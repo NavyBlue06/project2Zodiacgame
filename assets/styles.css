@@ -26,4 +26,12 @@ button {
 }
 
 /* add responsiveness*/
-@media (max-width)
+@media (max-width: 768px)
+/*Reduce button and image size for smaller screens*/
+button img {
+    width: 80px;
+}
+button {
+    padding: 3px;
+}
+/**/
