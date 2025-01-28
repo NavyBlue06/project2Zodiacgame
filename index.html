@@ -151,8 +151,11 @@
                 } else {
                     alert('You must select card from the other row!');
                 }
-                // reset flipped card tracking-- update to function to be called up under the else statement on row 120
-                function resetFlipState() {
+                
+            }
+
+            // reset flipped card tracking-- update to function to be called up under the else statement on row 120
+            function resetFlipState() {
                     firstFlippedCard = null;
                     firstFlippedButton = null;
                     firstFlippedRow = null;
@@ -160,9 +163,6 @@
                     allowFlippingTopRow = true;
                     allowFlippingBottomRow = true;
                 }
-            }
-
-
             // Asign image to buttons in the top row
             for (let i = 1; i <= 12; i++) {
                 const button = document.getElementById(`btn${i}`);
