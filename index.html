@@ -88,6 +88,14 @@
             function handleFlip(button, cardImage, row) {
                 if (!isFlippingAllowed) 
                     return;
+                if (row === 'top' && isTopRowFlipped){
+                    alert ('You have to pick a card from the bottom row now!') 
+                    return;
+                }
+                if (row === 'bottom' && isBottomRowFlipped){
+                    alert ('You have already flipped one card in the bottom row') 
+                    return;
+                }
                 /*
                 // don't flip in the same row
                 if (firstFlippedRow === row) {
@@ -100,6 +108,9 @@
                 if (img.src.includes(cardImage)) {
                     return;
                 }
+
+                //flip card
+                img.src = cardImage;
 
 
                 // prevent flipping cards in the same row, if one is flipped.
