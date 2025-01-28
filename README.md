@@ -20,9 +20,14 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 **Memory Challenge:** Test your ability to recall card placement.
 **Responsive Design:** works on difeerent devices like mobile phone, desktop and tablets. 
 **Score Tracking:** Keeps track of how many matches you've made.
+
+---
 ## Technologies Used
+
 **HTML:** Structuring the game layout. 
+
 **CSS:** Styling the game interface.
+
 **JavaScript:** Implement game logic, card flipping, interactivity and match functionality. 
 
 ---
