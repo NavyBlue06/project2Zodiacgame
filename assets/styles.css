@@ -5,7 +5,7 @@ body {
 /* style for img inside the button*/
 button img {
     width:100px;
-    hight:auto;
+    height: auto;
     display: block;
     margin: 0 auto
 }
