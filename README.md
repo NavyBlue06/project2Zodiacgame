@@ -17,8 +17,11 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 ## Features
 
 **Zodiac-Themed cards designed by moi**: gives you a good opportunity to learn about astrology and yourself
+
 **Memory Challenge:** Test your ability to recall card placement.
+
 **Responsive Design:** works on difeerent devices like mobile phone, desktop and tablets. 
+
 **Score Tracking:** Keeps track of how many matches you've made.
 
 ---
