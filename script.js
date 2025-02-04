@@ -29,6 +29,13 @@
 
     let isTopRowFlipped = false; // Has a card been flipped in the top row?
     let isBottomRowFlipped = false; // Has a card been flipped in the bottom row?
+    
+    // add the score on page, don't forget to remove the alert please gurl!
+    const scoreDisplay= document.getElementById('score-update');
+    // new function to have the score update on the page: 
+    function updateScore() {
+        scoreDisplay.textContent = `Score:${score}`;
+    }
 
     // Handle card flipping
     function handleFlip(button, cardImage, row) {
