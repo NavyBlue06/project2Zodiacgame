@@ -75,7 +75,7 @@
             if (firstFlippedCard === cardImage) {
                 // Cards match
                 score++;
-                alert(`It's a match! Current score: ${score}`);
+                //alert(`It's a match! Current score: ${score}`);
                 resetFlipState();
             } else {
                 // Cards don't match, flip them back
