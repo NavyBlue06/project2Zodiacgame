@@ -73,6 +73,7 @@ function handleFlip(button, cardImage, row) {
         isFlippingAllowed = false; // Block further flipping until reset
 
         if (firstFlippedCard === cardImage) {
+            //if they match a popup will appear
             let zodiacSign = cardImage.split("/")[2];
             displayPopup(zodiacSign);
             // Cards match
@@ -155,4 +156,8 @@ function displayPopup(zodiacSign) {
     popupTitle.textContent= `You have matched ${zodiacSign}!`;
     popupText.textContent= zodiacStories[zodiacSign];
     modal.style.display= "flex";
+}
+//button to close the popup
+closePopup.onclick= closeButton.onclick= function() {
+    modal.style.display= "none";
 }
