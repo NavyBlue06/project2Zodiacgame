@@ -2,6 +2,21 @@
 body {
     background-color: bisque;
 }
+
+p {
+    font-size: 1.2em;
+    color: #333;
+    
+}
+
+/*Reset button style*/
+#reset-button {
+    background-color: #333;
+    color:white;
+    padding: 10px 20px;
+    border: black;
+    cursor: pointer;
+}
 /* style for img inside the button*/
 button img {
     width:100px;
