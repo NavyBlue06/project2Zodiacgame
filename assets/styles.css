@@ -64,7 +64,7 @@ button {
     background-color: rgba(0,0,0,0.4);
 }
 .modal-content {
-    background-color: #fefefe;
+    background-color:bisque;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -73,16 +73,16 @@ button {
     text-align: center;
 }
 .close {
-    color: #aaa;
+    color: bisque;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 button #close-button {
     background-color: #333;
-    color:bisque;
+    color:grey;
     padding: 10px 20px;
-    border: none;
+    border: black
     cursor: pointer;
     margin-top: 10px;
 }
