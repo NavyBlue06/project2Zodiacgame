@@ -139,3 +139,18 @@ const zodiacStories = {
     
     "Pisces": "Pisces is the twelfth sign of the zodiac, and it is also the final sign in the zodiacal cycle. Hence, this sign brings together many of the characteristics of the eleven signs that have come before it. Pisces, however, are happiest keeping many of these qualities under wraps. These folks are selfless, spiritual, and very focused on their inner journey."
 };
+
+//select the popup modal
+const modal = document.getElementById("popup-Modal");
+const popupTitle = document.getElementById("popup-title");
+const popupText = document.getElementById("popup-text");
+const closePopup = document.getElementById("close");
+<div id="popup-Modal" class="modal"> 
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+            <button id="close-button">Enlightened!</button>
+
+            </div>
+        </div>
