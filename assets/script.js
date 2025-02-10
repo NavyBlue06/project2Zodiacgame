@@ -161,3 +161,5 @@ function displayPopup(zodiacSign) {
 closePopup.onclick= closeButton.onclick= function() {
     modal.style.display= "none";
 }
+
+//restart the game 
