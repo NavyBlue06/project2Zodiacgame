@@ -1,4 +1,7 @@
+<img src="assets/documentation/uidev.png" alt="Am I responsive?" width="500"/>
+
 # Zodiac Memory Matching Game
+
 ## Introduction
 The **Zodiac Memory Matching Game** is a fun and interactive game where players match zodiac-themed cards. The game challenges your memory by having you flip one card from the top row and one from the bottom row, aiming to find pairs that match. 
 
@@ -24,6 +27,8 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 
 **Score Tracking:** Keeps track of how many matches you've made.
 
+
+
 ---
 ## Technologies Used
 
@@ -44,8 +49,7 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 
 ## Possible Future Enhacements
 - Add a timer to make it more challenging 
-- Reshuffle cards to make the game more difficult. 
-- Introduce a restrat button to restart the game. 
+- Reshuffle cards to make the game more difficult.  
 - Add more animation for flipping cards for a smoother experience. 
 - Have the cards come forward to make them readable for the player. 
 
