@@ -80,7 +80,7 @@ button {
 }
 #close-button {
     background-color: #333;
-    color:grey;
+    color:rgba(166, 163, 163, 0.884);
     padding: 10px 20px;
     border: black;
     cursor: pointer;
