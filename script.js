@@ -73,9 +73,11 @@ function handleFlip(button, cardImage, row) {
         isFlippingAllowed = false; // Block further flipping until reset
 
         if (firstFlippedCard === cardImage) {
+            let zodiacSign = cardImage.split("/")[2];
+            displayPopup(zodiacSign);
             // Cards match
             score++;
-            //alert(`It's a match! Current score: ${score}`);
+            updateScore();
             resetFlipState();
         } else {
             // Cards don't match, flip them back
@@ -145,12 +147,12 @@ const modal = document.getElementById("popup-Modal");
 const popupTitle = document.getElementById("popup-title");
 const popupText = document.getElementById("popup-text");
 const closePopup = document.getElementById("close");
-<div id="popup-Modal" class="modal"> 
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="popup-title"></h2>
-            <p id="popup-text"></p>
-            <button id="close-button">Enlightened!</button>
+const closeButton= document.getElementById("close-button");
 
-            </div>
-        </div>
+
+//function to display the popup
+function displayPopup(zodiacSign) {
+    popupTitle.textContent= `You have matched ${zodiacSign}!`;
+    popupText.textContent= zodiacStories[zodiacSign];
+    modal.style.display= "flex";
+}
