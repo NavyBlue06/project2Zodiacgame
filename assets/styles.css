@@ -73,7 +73,7 @@ button {
     text-align: center;
 }
 .close {
-    color: bisque;
+    color:#333;
     float: right;
     font-size: 28px;
     font-weight: bold;
