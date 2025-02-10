@@ -86,16 +86,7 @@ button #close-button {
     cursor: pointer;
     margin-top: 10px;
 }
+button #close-button:hover {
+    background-color: #555;
+}
 
-
-
-
-<div id="popup-Modal" class="modal"> 
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="popup-title"></h2>
-            <p id="popup-text"></p>
-            <button id="close-button">Enlightened!</button>
-
-            </div>
-        </div>
