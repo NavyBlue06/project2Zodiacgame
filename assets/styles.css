@@ -55,7 +55,7 @@ button {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -78,15 +78,15 @@ button {
     font-size: 28px;
     font-weight: bold;
 }
-button #close-button {
+#close-button {
     background-color: #333;
     color:grey;
     padding: 10px 20px;
-    border: black
+    border: black;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 5px;
 }
-button #close-button:hover {
+#close-button:hover {
     background-color: #555;
 }
 
