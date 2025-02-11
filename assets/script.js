@@ -164,7 +164,7 @@ const zodiacStories = {
 const modal = document.getElementById("popup-Modal");
 const popupTitle = document.getElementById("popup-title");
 const popupText = document.getElementById("popup-text");
-const closePopup = document.getElementById("close");
+const closePopup = document.getElementById("close-popup");
 const closeButton = document.getElementById("close-button");
 
 //function to display the popup
@@ -177,6 +177,9 @@ function displayPopup(zodiacSign) {
 closePopup.addEventListener("click" = function () {
   modal.style.display = "none";
 });
+closeButton.addEventListener("click" = function () {
+    modal.style.display = "none";
+});   
 
 //Restart the game- reset button //Add eventlistener incase the reset button is clicked
 const resetButton = document.getElementById("reset-button");

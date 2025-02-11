@@ -50,13 +50,14 @@ button {
     margin-top: 20px;
 }
 /* add responsiveness*/
-@media (max-width: 768px)
-/*Reduce button and image size for smaller screens*/
-button img {
-    width: 80px;
-}
-button {
-    padding: 3px;
+@media (max-width: 768px) {
+    /*Reduce button and image size for smaller screens*/
+    button img {
+        width: 80px;
+    }
+    button {
+        padding: 3px;
+    }
 }
 
 
@@ -87,7 +88,7 @@ button {
     max-width: 600px;
     text-align: center;
 }
-.close {
+.close-popup {
     color:#333;
     float: right;
     font-size: 28px;
