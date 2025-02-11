@@ -40,12 +40,17 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 
 ---
 ## Gameplay Screenshots
-//add screenshots here after testing on devices. 
+| Screenshot | Description |
+|------------|------------|
+| ![Game Screenshot](assets/documentation/zodiac-game-screenshot.png) | The main interface of the Zodiac Memory Game, where players match cards based on zodiac signs. |
+| ![Flipped Card](assets/documentation/card-flipped.png) | A flipped card revealing its zodiac sign after the player clicks on it. |
+| ![Same Row Alert](assets/documentation/alert-card.png) | An alert appears if the player selects two cards from the same row, enforcing the game rules. |
+| ![Match Popup](assets/documentation/popup.png) | A pop-up notification appears when two matching cards are found, updating the score. |
 
 ## Known Issues
-- No end of game notification when all pairs are matched. 
-- Hard to read cards. (maybe fix with roy's guidance)
-- Score is displayed only with alerts, and not on the webpage. 
+- No issues are noted at this point.
+
+
 
 ## Possible Future Enhacements
 - Add a timer to make it more challenging 
@@ -57,11 +62,63 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 - Zodiac images and cards designed by me on [canva] (https://www.canva.com/).
 - Game concept is inspired by the classic memory card game that all of us have played at least once in our life time. 
 
+---
+# Deployment
+
+## Local Deployment
+
+### Local Preparation
+
+**Requirements:**
+- An IDE of your choice, such as [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/)
+- [Git](https://git-scm.com/)
+- A web browser for testing the project
+- Basic knowledge of HTML, CSS, and JavaScript
+
+### Local Instructions
+
+1. Download the project repository [here](https://github.com/NavyBlue06/project2Zodiacgame/archive/main.zip) and extract the zip file to your desired location. Alternatively, clone the repository using:
+   ```
+   git clone https://github.com/NavyBlue06/project2Zodiacgame.git
+   ```
+2. Launch your IDE and open the base directory of the extracted or cloned repository.
+3. To view the project locally, open the `index.html` file in a web browser. Alternatively, if Python is installed, you can serve the project locally by running:
+   ```
+   python3 -m http.server
+   ```
+   Then, visit `http://localhost:8000` in your browser.
+4. Modify the files as needed to customize or enhance the project.
+
+---
+
+## GitHub Deployment
+
+### GitHub Preparation
+
+**Requirements:**
+- A free GitHub account
+
+### GitHub Instructions
+
+1. Sign in to your GitHub account and go to your repository: [https://github.com/NavyBlue06/milestone1nav](https://github.com/NavyBlue06/milestone1nav).
+2. Ensure all updates are committed and pushed to the main branch.
+3. Open the **Settings** page of the repository.
+4. Scroll down to the **Pages** section under "Code and automation."
+5. Under "Source," choose the branch to deploy (e.g., `main`) and select the `/root` folder.
+6. Click **Save** and allow a few moments for GitHub Pages to publish the site.
+7. Once completed, the site will be accessible at: `https://navyblue06.github.io/milestone1nav/`.
+
+---
+## Credits and Contact
+
+### Content
+Nearly all text content for this project was generated or refined using OpenAI's ChatGPT-4. The AI tool was also instrumental in correcting and generating high-quality textual content to ensure clarity and professionalism.
+All media used is my own.
 
 ## Contact
 
 Please feel free to reach out if you have any questions or suggestions! 
-Email: (navaheierdal92@outlook.com).
+Email: `navaheierdal92@outlook.com`.
 GitHub: [NavyBlue06](https://github.com/NavyBlue06).
 
 
