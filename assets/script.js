@@ -187,4 +187,3 @@ resetButton.onclick = function () {
 topCards.sort(() => 0.5 - Math.random());
 bottomCards.sort(() => 0.5 - Math.random());
 };
-<button id="reset-button">Reset Game</button>
