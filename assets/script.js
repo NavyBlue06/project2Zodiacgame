@@ -212,5 +212,4 @@ for (let i = 13; i <= 24; i++) {
 
 
 
- //console.log("game reset"); 
-
+ 
