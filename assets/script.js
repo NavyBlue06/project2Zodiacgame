@@ -182,5 +182,9 @@ const resetButton = document.getElementById("reset-button");
 resetButton.onclick = function () {
     resetFlipState();
     score= 0;
+    updateScore();
+    // ReShuffle both rows
+topCards.sort(() => 0.5 - Math.random());
+bottomCards.sort(() => 0.5 - Math.random());
 };
 <button id="reset-button">Reset Game</button>
