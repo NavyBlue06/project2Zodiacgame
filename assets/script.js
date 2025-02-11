@@ -109,7 +109,8 @@ function resetFlipState() {
 for (let i = 1; i <= 12; i++) {
   const button = document.getElementById(`btn${i}`);
   const cardImage = topCards[i - 1];
-  button.addEventListener("click", () => handleFlip(button, cardImage, "top"));
+  button.addEventListener("click", () => 
+    handleFlip(button, cardImage, "top"));
 }
 
 // Assign images to buttons in the bottom row
@@ -179,10 +180,14 @@ closePopup.onclick = closeButton.onclick = function () {
 
 //Restart the game- reset button //Add eventlistener incase the reset button is clicked
 const resetButton = document.getElementById("reset-button");
+if (resetButton){
 resetButton.addEventListener("click", () => 
 resetFlipState();
 score= 0;
-updateScore());
+updateScore()
+
+);
+}
 
 
 
