@@ -174,10 +174,10 @@ function displayPopup(zodiacSign) {
   modal.style.display = "flex";
 }
 //button to close the popup
-closePopup.addEventListener("click" = function () {
+closePopup.addEventListener("click", () => {
   modal.style.display = "none";
 });
-closeButton.addEventListener("click" = function () {
+closeButton.addEventListener("click",() {
     modal.style.display = "none";
 });   
 
