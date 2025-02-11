@@ -47,6 +47,19 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 | ![Same Row Alert](assets/documentation/alert-card.png) | An alert appears if the player selects two cards from the same row, enforcing the game rules. |
 | ![Match Popup](assets/documentation/popup.png) | A pop-up notification appears when two matching cards are found, updating the score. |
 
+
+## Testing 
+
+Below you have a table with all the testing I have done on my game.
+
+| **Test Type**  | **Tested Feature**             | **Expected Result**                         | **Actual Result** | **Pass/Fail** | **Screenshot** |
+|---------------|--------------------------------|---------------------------------------------|------------------|-------------|--------------|
+| **HTML**      | Validate HTML with W3C        | No errors                                  | No errors        | ✅ Pass     | ![HTML Testing Passed](assets/documentation/tests/html-testing.png) |
+| **CSS**       | Validate CSS with W3C         | No errors                                  | No errors        | ✅ Pass     | ![CSS Testing Passed](assets/documentation/tests/css-testing.png) |
+| **JavaScript**| Console Errors                | No console errors in DevTools              | No errors found  | ✅ Pass     | ![JS Console Test](assets/documentation/tests/jscript-console.png) |
+| **JavaScript**| Button Clicks                 | Buttons trigger correct functions          | Buttons work fine | ✅ Pass  | ![JS Button Test](assets/documentation/tests/button-testing.png) |
+
+
 ## Known Issues
 - No issues are noted at this point.
 
