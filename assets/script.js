@@ -180,8 +180,11 @@ closePopup.onclick = closeButton.onclick = function () {
 //restart the game- reset button
 const resetButton = document.getElementById("reset-button");
 resetButton.onclick = function () {
+    console.log("game reset");
+
+    // Reset score and update
     resetFlipState();
-    score= 0;
+     score= 0;
     updateScore();
 };
 
