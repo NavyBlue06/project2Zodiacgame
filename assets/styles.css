@@ -88,7 +88,7 @@ button {
     max-width: 600px;
     text-align: center;
 }
-.close-popup {
+#close-popup {
     color:#333;
     float: right;
     font-size: 28px;
