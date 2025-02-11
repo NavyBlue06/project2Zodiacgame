@@ -177,7 +177,7 @@ closePopup.onclick = closeButton.onclick = function () {
   modal.style.display = "none";
 };
 
-//restart the game- reset button
+//Restart the game- reset button //Add eventlistener incase the reset button is clicked
 const resetButton = document.getElementById("reset-button");
 resetButton.addEventListener("click", () => 
 resetFlipState();
@@ -202,7 +202,7 @@ for (let i = 13; i <= 24; i++) {
    
 }
 
-//add eventlistener incase the reset button is clicked
+
 
 
  //console.log("game reset"); 
