@@ -174,9 +174,9 @@ function displayPopup(zodiacSign) {
   modal.style.display = "flex";
 }
 //button to close the popup
-closePopup.onclick = closeButton.onclick = function () {
+closePopup.addEventListener("click" = function () {
   modal.style.display = "none";
-};
+)};
 
 //Restart the game- reset button //Add eventlistener incase the reset button is clicked
 const resetButton = document.getElementById("reset-button");
