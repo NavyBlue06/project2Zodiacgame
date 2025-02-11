@@ -186,4 +186,16 @@ resetButton.onclick = function () {
     // ReShuffle both rows
 topCards.sort(() => 0.5 - Math.random());
 bottomCards.sort(() => 0.5 - Math.random());
+
+// Assign images to buttons in the top row
+for (let i = 1; i <= 12; i++) {
+    document.getElementById(`btn${i}`).querySelector("img").src = "assets/images/13-card-before/card-before-flipping.png";
+    ;
+  }
+  
+  // Assign images to buttons in the bottom row
+  for (let i = 13; i <= 24; i++) {
+    document.getElementById(`btn${i}`).querySelector("img").src = "assets/images/13-card-before/card-before-flipping.png";
+   
+  }
 };
