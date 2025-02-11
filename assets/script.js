@@ -182,9 +182,9 @@ const resetButton = document.getElementById("reset-button");
 resetButton.addEventListener("click", () => 
 resetFlipState();
 score= 0;
-updateScore();) 
+updateScore());
 
-console.log("game reset");
+
 
 // ReShuffle both rows
 
