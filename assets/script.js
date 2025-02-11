@@ -179,14 +179,12 @@ closePopup.onclick = closeButton.onclick = function () {
 
 //restart the game- reset button
 const resetButton = document.getElementById("reset-button");
-resetButton.onclick = function () {
-    console.log("game reset");
+resetButton.addEventListener("click", () => 
+resetFlipState();
+score= 0;
+updateScore();) 
 
-    // Reset score and update
-    resetFlipState();
-     score= 0;
-    updateScore();
-};
+console.log("game reset");
 
 // ReShuffle both rows
 
@@ -203,5 +201,9 @@ for (let i = 13; i <= 24; i++) {
     document.getElementById(`btn${i}`).querySelector("img").src = "assets/images/13-card-before/card-before-flipping.png";
    
 }
+
+//add eventlistener incase the reset button is clicked
+
+
  //console.log("game reset"); 
 
