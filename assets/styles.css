@@ -35,7 +35,7 @@ button {
 
 /*Center the rows*/
 #row1, #row2 {
-    display:flex
+    display:flex;
     justify-content:center;
     margin:10px 0;
     flex-wrap:wrap; /*for responsiveness*/
