@@ -2,6 +2,19 @@
 
 # Zodiac Memory Matching Game
 
+## Table of Contents
+- [Introduction](#introduction)
+- [How to Play](#how-to-play)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Gameplay Screenshots](#gameplay-screenshots)
+- [Testing](#testing)
+- [Known Issues](#known-issues)
+- [Future Enhancements](#future-enhancements)
+- [Deployment](#deployment)
+- [Credits and Contact](#credits-and-contact)
+
+
 ## Introduction
 The **Zodiac Memory Matching Game** is a fun and interactive game where players match zodiac-themed cards. The game challenges your memory by having you flip one card from the top row and one from the bottom row, aiming to find pairs that match. 
 
@@ -113,13 +126,13 @@ Below you have a table with all the testing I have done on my game.
 
 ### GitHub Instructions
 
-1. Sign in to your GitHub account and go to your repository: [https://github.com/NavyBlue06/milestone1nav](https://github.com/NavyBlue06/milestone1nav).
+1. Sign in to your GitHub account and go to your repository: [https://github.com/NavyBlue06/project2Zodiacgame](https://github.com/NavyBlue06/).
 2. Ensure all updates are committed and pushed to the main branch.
 3. Open the **Settings** page of the repository.
 4. Scroll down to the **Pages** section under "Code and automation."
 5. Under "Source," choose the branch to deploy (e.g., `main`) and select the `/root` folder.
 6. Click **Save** and allow a few moments for GitHub Pages to publish the site.
-7. Once completed, the site will be accessible at: `https://navyblue06.github.io/milestone1nav/`.
+7. Once completed, the site will be accessible at: `https://navyblue06.github.io/project2Zodiacgame/`.
 
 ---
 ## Credits and Contact
