@@ -197,11 +197,11 @@ bottomCards.sort(() => 0.5 - Math.random());
 for (let i = 1; i <= 12; i++) {
     document.getElementById(`btn${i}`).querySelector("img").src = "assets/images/13-card-before/card-before-flipping.png";
     ;
-  }
+}
   
-  for (let i = 13; i <= 24; i++) {
+for (let i = 13; i <= 24; i++) {
     document.getElementById(`btn${i}`).querySelector("img").src = "assets/images/13-card-before/card-before-flipping.png";
    
-  }
- console.log("game reset"); 
+}
+ //console.log("game reset"); 
 
