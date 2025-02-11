@@ -188,7 +188,7 @@ if (resetButton){
 resetButton.addEventListener("click", () => {
 resetFlipState();
 score= 0;
-updateScore()
+updateScore();
 console.log("game reset");
 });
 } else {
