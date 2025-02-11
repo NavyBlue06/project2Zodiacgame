@@ -177,7 +177,7 @@ function displayPopup(zodiacSign) {
 closePopup.addEventListener("click", () => {
   modal.style.display = "none";
 });
-closeButton.addEventListener("click",() {
+closeButton.addEventListener("click",() => {
     modal.style.display = "none";
 });   
 
