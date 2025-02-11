@@ -1,17 +1,17 @@
 // Card images
 const topCards = [
-  "assets/images/Aries/Aries.png",
-  "assets/images/Taurus/Taurus.png",
-  "assets/images/Gemini/Gemini.png",
-  "assets/images/Cancer/Cancer.png",
-  "assets/images/Leo/Leo.png",
-  "assets/images/Virgo/Virgo.png",
-  "assets/images/Libra/Libra.png",
-  "assets/images/Scorpio/Scorpio.png",
-  "assets/images/Sagittarius/Sagittarius.png",
-  "assets/images/Capricorn/Capricorn.png",
-  "assets/images/Aquarius/Aquarius.png",
-  "assets/images/Pisces/Pisces.png",
+  "assets/images/Aries/1.png",
+  "assets/images/Taurus/2.png",
+  "assets/images/Gemini/3.png",
+  "assets/images/Cancer/4.png",
+  "assets/images/Leo/5.png",
+  "assets/images/Virgo/6.png",
+  "assets/images/Libra/7.png",
+  "assets/images/Scorpio/8.png",
+  "assets/images/Sagittarius/9.png",
+  "assets/images/Capricorn/10.png",
+  "assets/images/Aquarius/11.png",
+  "assets/images/Pisces/12.png",
 ];
 const bottomCards = [...topCards]; // Duplicate card images for the bottom row
 
