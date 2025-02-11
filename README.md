@@ -23,7 +23,7 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 2. Flip one cards from the **bottom row** to try to match it with the first card from the **top row**
 3. If the two cards don't match: 
  - The cards flip back after a short delay. 
- - Player has to tr again
+ - Player has to try again
 4. If the two cards match: 
  - Player scores a point. 
  - The cards remain flipped. 
@@ -141,11 +141,9 @@ Below you have a table with all the testing I have done on my game.
 Nearly all text content for this project was generated or refined using OpenAI's ChatGPT-4. The AI tool was also instrumental in correcting and generating high-quality textual content to ensure clarity and professionalism.
 All media used is my own.
 
-## Contact
-
-Please feel free to reach out if you have any questions or suggestions! 
-Email: `navaheierdal92@outlook.com`.
-GitHub: [NavyBlue06](https://github.com/NavyBlue06).
+**Contact Me:**
+- 📧 Email: [navaheierdal92@outlook.com](mailto:navaheierdal92@outlook.com)
+- 🐙 GitHub: [NavyBlue06](https://github.com/NavyBlue06)
 
 
 ## Installation 
