@@ -187,6 +187,8 @@ score= 0;
 updateScore()
 console.log("game reset");
 });
+} else {
+    console.log("reset button not found");
 }
 
 
