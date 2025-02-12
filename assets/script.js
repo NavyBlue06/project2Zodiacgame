@@ -109,8 +109,7 @@ function resetFlipState() {
 for (let i = 1; i <= 12; i++) {
   const button = document.getElementById(`btn${i}`);
   const cardImage = topCards[i - 1];
-  button.addEventListener("click", () => 
-    handleFlip(button, cardImage, "top"));
+  button.addEventListener("click", () => handleFlip(button, cardImage, "top"));
 }
 
 // Assign images to buttons in the bottom row
@@ -174,26 +173,23 @@ function displayPopup(zodiacSign) {
   modal.style.display = "flex";
 }
 //button to close the popup
-closePopup.addEventListener("click", function() {
+closePopup.addEventListener("click", function () {
   modal.style.display = "none";
 });
-closeButton.addEventListener("click", function() {
-    modal.style.display = "none";
-});   
-
+closeButton.addEventListener("click", function () {
+  modal.style.display = "none";
+});
 
 //Restart the game- reset button //Add eventlistener incase the reset button is clicked
 const resetButton = document.getElementById("reset-button");
-if (resetButton){
-resetButton.addEventListener("click", () => {
-location.reload();
-console.log("game reset");
-});
+if (resetButton) {
+  resetButton.addEventListener("click", () => {
+    location.reload();
+    console.log("game reset");
+  });
 } else {
-    console.log("reset button not found");
+  console.log("reset button not found");
 }
-
-
 
 // ReShuffle both rows
 
@@ -202,16 +198,11 @@ bottomCards.sort(() => 0.5 - Math.random());
 
 //Reset cards to back when reset button is clicked
 for (let i = 1; i <= 12; i++) {
-    document.getElementById(`btn${i}`).querySelector("img").src = "assets/images/13-card-before/card-before-flipping.png";
-    ;
+  document.getElementById(`btn${i}`).querySelector("img").src =
+    "assets/images/13-card-before/card-before-flipping.png";
 }
-  
+
 for (let i = 13; i <= 24; i++) {
-    document.getElementById(`btn${i}`).querySelector("img").src = "assets/images/13-card-before/card-before-flipping.png";
-   
+  document.getElementById(`btn${i}`).querySelector("img").src =
+    "assets/images/13-card-before/card-before-flipping.png";
 }
-
-
-
-
- 
