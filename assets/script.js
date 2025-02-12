@@ -186,9 +186,7 @@ closeButton.addEventListener("click", function() {
 const resetButton = document.getElementById("reset-button");
 if (resetButton){
 resetButton.addEventListener("click", () => {
-resetFlipState();
-score= 0;
-updateScore();
+location.reload();
 console.log("game reset");
 });
 } else {
