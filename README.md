@@ -30,6 +30,15 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 5. The game continues until all pairs are matched.   
 
 --- 
+## User Stories
+
+- As a player, I want to flip a card and reveal a zodiac symbol so I can try to find its match.
+- As a player, I want to match a card from the top row with one from the bottom to score a point.
+- As a player, I want visual feedback and popups when I find a match so I feel rewarded.
+- As a player, I want to reset the game and try again when I want.
+- As a player, I want the game to work on my mobile device, tablet, and computer.
+
+---
 ## Features
 
 **Zodiac-Themed cards designed by moi**: gives you a good opportunity to learn about astrology and yourself
