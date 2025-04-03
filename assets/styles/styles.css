@@ -6,63 +6,72 @@ body {
 p {
     font-size: 1.2em;
     color: #333;
-    
+
 }
 
 /*Reset button style*/
 #reset-button {
     background-color: #333;
-    color:white;
+    color: white;
     padding: 10px 20px;
     border: black;
     cursor: pointer;
 }
+
 /* style for img inside the button*/
 button img {
-    width:100px;
+    width: 100px;
     height: auto;
     display: block;
     margin: 0 auto
 }
 
 /*style for button*/
-button { 
+button {
     display: inline-block;
-    padding:5px;
-    border:none;
+    padding: 5px;
+    border: none;
     background: none;
 }
 
 /*Center the rows*/
-#row1, #row2 {
-    display:flex;
-    justify-content:center;
-    margin:10px 0;
-    flex-wrap:wrap; /*for responsiveness*/
+#row1,
+#row2 {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    /*for responsiveness*/
 }
+
 /*add separation betwwen rows, so they don't get mixed up*/
 #row1 {
     margin-bottom: 20px;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
 }
+
 #row2 {
     margin-top: 20px;
 }
+
 /* add responsiveness*/
 @media (max-width: 768px) {
+
     /*Reduce button and image size for smaller screens*/
     button img {
         width: 80px;
     }
+
     button {
         padding: 3px;
     }
 }
 
 
-/*add spacing betwwen rows test it Navah!*/ 
-#row1, #row2 {
+/*add spacing betwwen rows test it Navah!*/
+#row1,
+#row2 {
     gap: 10px;
     align-items: center;
 }
@@ -77,10 +86,11 @@ button {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
+
 .modal-content {
-    background-color:bisque;
+    background-color: bisque;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -88,21 +98,32 @@ button {
     max-width: 600px;
     text-align: center;
 }
+
 #close-popup {
-    color:#333;
+    color: #333;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 #close-button {
     background-color: #333;
-    color:rgba(166, 163, 163, 0.884);
+    color: rgba(166, 163, 163, 0.884);
     padding: 10px 20px;
     border: black;
     cursor: pointer;
     margin-top: 5px;
 }
+
 #close-button:hover {
     background-color: #555;
 }
 
+@media screen and (max-width: 375px) {
+    .modal-content {
+        width: 90%;
+        font-size: 0.9rem;
+        overflow-y: auto;
+        max-height: 80vh;
+    }
+}
