@@ -39,6 +39,13 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 - As a player, I want the game to work on my mobile device, tablet, and computer.
 
 ---
+| **User Story** | **Tested Feature** | **Expected Result** | **Actual Result** | **Pass/Fail** |
+|----------------|--------------------|----------------------|-------------------|----------------|
+| Flip a card and see the zodiac | Button Click | Clicking a card flips it to show zodiac | Works as expected | ✅ Pass |
+| Match top row to bottom row | Matching logic | Only cards from different rows can match | Works as expected | ✅ Pass |
+| Get feedback after match | Modal Popup | A modal appears with sign info | Modal works, minor mobile overflow | ⚠️ Pass with known issue |
+
+---
 ## Features
 
 **Zodiac-Themed cards designed by moi**: gives you a good opportunity to learn about astrology and yourself
