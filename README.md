@@ -46,6 +46,19 @@ The **Zodiac Memory Matching Game** is a fun and interactive game where players 
 | Get feedback after match | Modal Popup | A modal appears with sign info | Modal works, minor mobile overflow | ⚠️ Pass with known issue |
 
 ---
+### Manual Testing
+
+- **Test: Flip two cards from the same row**
+  - **Expected**: Alert appears
+  - **Actual**: Alert appears
+  - ✅ Pass
+
+- **Test: Match two cards**
+  - **Expected**: Popup appears with zodiac info
+  - **Actual**: Popup appears
+  - ✅ Pass
+---
+
 ## Features
 
 **Zodiac-Themed cards designed by moi**: gives you a good opportunity to learn about astrology and yourself
