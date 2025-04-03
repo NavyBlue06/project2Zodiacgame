@@ -55,6 +55,14 @@ button {
     margin-top: 20px;
 }
 
+/*style for the game container*/
+.game-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
 /* add responsiveness*/
 @media (max-width: 768px) {
 
