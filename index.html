@@ -1,81 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zodiac Memory Game</title>
-        <link rel="stylesheet" href="assets/styles.css">
 
-    </head>
-    <body>
-        <h1>
-            Zodiac Memory Matching Game</h1>
-        <!--Explain game for the player-->
-        <div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Memory Game</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
+
+
+</head>
+
+<body>
+    <h1>
+        Zodiac Memory Matching Game</h1>
+    <!--Explain game for the player-->
+    <div>
         <p>
-            Welcome to the Zodiac Memory Matching Game! The goal of the game is to match all the zodiac signs. Click on a card to flip it over and reveal the zodiac sign. Click on another card to find its match. If the two cards match, they will stay flipped over. If the two cards do not match, they will flip back over. Keep playing until you have matched all the zodiac signs. Good luck!</p>
-        </div>
-            <!-- TEXT TO TELL THE SCORE-->    
-        <p id="score-update">Score:0</p>
-        <!--Reset button set-->
-        <p>
-            <button id="reset-button">Reset Game</button>
-        </p>
-        <!--first button set -->
+            Welcome to the Zodiac Memory Matching Game! The goal of the game is to match all the zodiac signs. Click on
+            a card to flip it over and reveal the zodiac sign. Click on another card to find its match. If the two cards
+            match, they will stay flipped over. If the two cards do not match, they will flip back over. Keep playing
+            until you have matched all the zodiac signs. Good luck!</p>
+    </div>
+    <!-- TEXT TO TELL THE SCORE-->
+    <p id="score-update">Score:0</p>
+    <!--Reset button set-->
+    <p>
+        <button id="reset-button">Reset Game</button>
+    </p>
+    <!--first button set -->
 
 
-        <p id="row1">
-            <button id="btn1"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn2"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn3"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn4"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn5"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn6"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn7"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn8"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn9"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn10"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn11"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn12"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-        </p>
+    <p id="row1">
+        <button id="btn1"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn2"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn3"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn4"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn5"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn6"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn7"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn8"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn9"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn10"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn11"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn12"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+    </p>
 
 
-        <!--Second button set-->
+    <!--Second button set-->
 
-        <p id="row2">
-            <button id="btn13"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn14"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn15"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn16"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn17"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn18"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn19"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn20"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn21"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn22"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn23"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-            <button id="btn24"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
-        </p>
+    <p id="row2">
+        <button id="btn13"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn14"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn15"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn16"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn17"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn18"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn19"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn20"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn21"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn22"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn23"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+        <button id="btn24"><img src="assets/images/13-card-before/card-before-flipping.png" alt="card-back"></button>
+    </p>
 
 
 
-        
 
-        <!--Pop-up Modal-->
-        <div id="popup-Modal" class="modal"> 
+
+    <!--Pop-up Modal-->
+    <div id="popup-Modal" class="modal">
         <div class="modal-content">
             <span id="close-popup">&times;</span>
             <h2 id="popup-title">Enlighten Yourself!</h2>
             <p id="popup-text"></p>
             <button id="close-button">Enlightened!</button>
 
-            </div>
-        </div> 
+        </div>
+    </div>
 
 
 
 
-        <script src="assets/script.js"></script>
+    <script src="assets/scripts/script.js"></script>
 
-    </body>
+</body>
+
 </html>
